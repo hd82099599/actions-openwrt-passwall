@@ -8,4 +8,5 @@
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
 rm -rf package/lienol
-git clone https://github.com/Lancenas/lienol-openwrt-package/lienol package/lienol
+git clone https://github.com/Lancenas/lienol-openwrt-package.git ll
+mv ll/lienol package/lienol
