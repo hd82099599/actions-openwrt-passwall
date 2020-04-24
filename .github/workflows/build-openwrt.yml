@@ -12,8 +12,8 @@ on:
   release:
     types: [published]
   push:
-#    branches:
-#      - master
+    branches:
+      - master
 #  paths:
 #     - '.config'
 #  schedule:
@@ -23,7 +23,7 @@ on:
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: dev-master
+  REPO_BRANCH: dev-19.07
   CONFIG_FILE: .config
   DIY_SH: diy.sh
   FREE_UP_DISK: false
