@@ -11,10 +11,12 @@ rm -rf package/lienol
 git clone https://github.com/Lancenas/lienol-openwrt-package.git ll
 mv ll/lienol package/lienol
 
-rm -rf package/lean
+#rm -rf package/lean
 git clone https://github.com/coolsnowwolf/lede.git lede
-mv lede/package/lean package/lean
+mv lede/package/lean/luci-app-music-remote-center package/lean/luci-app-music-remote-center
 
 git clone https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-smartdns
 git clone https://github.com/pymumu/smartdns.git package/lean/smartdns
 
+cd openwrt && ./scripts/feeds update -a
+cd openwrt && ./scripts/feeds install -a
