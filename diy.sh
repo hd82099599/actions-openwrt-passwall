@@ -15,3 +15,6 @@ rm -rf package/lean
 git clone https://github.com/coolsnowwolf/lede.git lede
 mv lede/package/lean package/lean
 
+git clone https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-smartdns
+git clone https://github.com/pymumu/smartdns.git package/lean/smartdns
+
