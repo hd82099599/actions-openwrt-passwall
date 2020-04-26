@@ -18,5 +18,5 @@ mv lede/package/lean/luci-app-music-remote-center package/lean/luci-app-music-re
 git clone https://github.com/pymumu/luci-app-smartdns.git package/lean/luci-app-smartdns
 git clone https://github.com/pymumu/smartdns.git package/lean/smartdns
 
-cd openwrt && ./scripts/feeds update -a
-cd openwrt && ./scripts/feeds install -a
+./scripts/feeds update -a
+./scripts/feeds install -a
