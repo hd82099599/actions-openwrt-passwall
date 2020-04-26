@@ -122,3 +122,10 @@ jobs:
       with:
         name: OpenWrt_firmware
         path: ${{ env.FIRMWARE }}
+
+    - name: Upload artifact packages
+      uses: actions/upload-artifact@master
+      with:
+        name: OpenWrt packages
+        path: ./bin/packages/
+
